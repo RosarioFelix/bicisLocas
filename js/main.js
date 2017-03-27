@@ -13,9 +13,9 @@ var psw= document.getElementById('input-password').value;
   if((n.length == 0)||(ln.length == 0)||(psw.length ==0)||(email.length==0)){
     alert ("Ingrese Campos Obligatorio");
   }else if(n != letras1 ){
-     alert ("Escriba este Modelo de nombre : Nombre")
+     alert ("Tipo de Nombre no valido"+ "\n" + "Primera Letra en Mayusculas")
    }else if (ln!= letras2) {
-    alert (" Escariba este modelo de apellido : 'Apellido'")
+    alert("Tipo de Apellido no valido"+ "\n" + "Primera Letra en Mayusculas" )
     // formato de validacion de un email
   }else if (email.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/)) {
     alert("Escriba este modelo de correo : 'xxxx@xxx.com'")
